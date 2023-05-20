@@ -1,4 +1,4 @@
-package org.bedu.java.backend.team5;
+package org.bedu.java.backend.crm;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

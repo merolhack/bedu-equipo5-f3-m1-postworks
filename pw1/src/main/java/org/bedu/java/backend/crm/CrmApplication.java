@@ -1,4 +1,4 @@
-package org.bedu.java.backend.team5;
+package org.bedu.java.backend.crm;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
