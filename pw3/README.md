@@ -1,1 +1,1 @@
-# Sesión 3: Spring MVC Validation
+# Sesión 3: Spring MVC validation
