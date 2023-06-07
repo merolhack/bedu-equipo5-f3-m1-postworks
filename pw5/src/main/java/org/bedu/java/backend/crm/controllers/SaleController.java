@@ -9,6 +9,9 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Lenin Meza merolhack@gmail.com
+ */
 @RestController
 @RequestMapping("/sale")
 public class SaleController {
