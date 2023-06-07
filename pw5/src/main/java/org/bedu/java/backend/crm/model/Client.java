@@ -1,10 +1,19 @@
 package org.bedu.java.backend.crm.model;
 
+import lombok.Builder;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
 import javax.validation.constraints.*;
 
 /**
+ * @author Lenin Meza merolhack@gmail.com
  * @author Paulo Zamora pauloizamora@outlook.com
  */
+
+@Data
+@Builder
+@RequiredArgsConstructor
 
 public class Client {
     @PositiveOrZero(message = "Client ID must be greater than zero.")

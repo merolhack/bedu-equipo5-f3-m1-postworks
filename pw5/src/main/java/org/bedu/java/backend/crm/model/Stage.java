@@ -1,12 +1,18 @@
 package org.bedu.java.backend.crm.model;
 
 
+import lombok.Builder;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
 import javax.validation.constraints.*;
 
 /**
  * @author Paulo Zamora pauloizamora@outlook.com
  */
-
+@Data
+@Builder
+@RequiredArgsConstructor
 public class Stage {
     @PositiveOrZero(message = "Stage ID must be greater than zero.")
     private long stageId;

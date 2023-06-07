@@ -1,15 +1,22 @@
 package org.bedu.java.backend.crm.model;
 
 
+import lombok.Builder;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
 import javax.validation.constraints.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
 /**
+ * @author Lenin Meza merolhack@gmail.com
  * @author Paulo Zamora pauloizamora@outlook.com
  */
-
+@Data
+@Builder
+@RequiredArgsConstructor
 public class Sale {
     @PositiveOrZero(message = "Sale ID must be greater than zero.")
     private long saleId;
