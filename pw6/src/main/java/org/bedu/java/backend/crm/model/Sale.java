@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 import javax.validation.constraints.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -19,7 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class Sale {
     @PositiveOrZero(message = "Sale ID must be greater than zero.")
-    private long saleId;
+    private Long saleId;
 
     @DecimalMin(value = "1.00", inclusive = true, message = "Amount must be equal or greater than one.")
     private float amount;
@@ -31,5 +30,5 @@ public class Sale {
     private Client client;
 
     @PastOrPresent(message = "Creation Date must not be greater than today's date.")
-    private LocalDate creationDate;
+    private LocalDateTime creationDate;
 }
