@@ -8,7 +8,7 @@ import org.mapstruct.Mapper;
  */
 @Mapper(componentModel = "spring")
 public interface ISaleMapper {
-    Sale saleModelToSaleEntity(org.bedu.java.backend.crm.model.Sale ventaModel);
+    Sale saleModelToSaleEntity(org.bedu.java.backend.crm.model.Sale saleModel);
 
     org.bedu.java.backend.crm.model.Sale saleEntityToSaleModel(Sale sale);
 }
