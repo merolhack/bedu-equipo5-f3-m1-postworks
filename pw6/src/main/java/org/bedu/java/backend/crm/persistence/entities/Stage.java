@@ -19,5 +19,5 @@ public class Stage {
     private String name;
 
     @Column(unique = true, nullable = false)
-    private Integer order;
+    private Integer stageOrder;
 }
