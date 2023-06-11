@@ -17,7 +17,7 @@ import java.util.List;
 public class Sale {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long saleId;
+    private Long saleId;
 
     private float amount;
 
