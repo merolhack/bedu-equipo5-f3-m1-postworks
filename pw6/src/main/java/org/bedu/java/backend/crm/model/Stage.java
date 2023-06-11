@@ -15,12 +15,12 @@ import javax.validation.constraints.*;
 @RequiredArgsConstructor
 public class Stage {
     @PositiveOrZero(message = "Stage ID must be greater than zero.")
-    private long stageId;
+    private Long stageId;
 
     @NotEmpty(message = "Stage Name must not be empty.")
     @Size(min = 4, max = 30, message = "Stage Name length must be between 4 letters and 30 letters.")
     private String name;
 
     @Positive(message = "Order must be greater than zero.")
-    private int order;
+    private Integer stageOrder;
 }
